@@ -41,9 +41,10 @@
         <div>
           <p> {{description}} </p>
           <ul>
-            {{#each displayIngredients}}
+              {{#each displayIngredient}}
+            <li>{{ingredients}}</li>
+            {{/each}}
           </ul>
-          {{/each}}
         </div>
       </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
