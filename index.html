@@ -38,9 +38,13 @@
       </script>
 
       <script id="recipe-details-partial" type="text/x-handlebars-template">
-          {{description}}
-          {{#each ingredients}}
+        <div>
+          <p> {{description}} </p>
+          <ul>
+            {{#each ingredients}}
+          </ul>
           {{/each}}
+        </div>
       </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
